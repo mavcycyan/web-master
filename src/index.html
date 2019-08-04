@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<base href=""/>
+
+	<meta name="keywords" content=". " />
+	<meta name="description" content="" />
+	<link rel="canonical" href="">
+	<title>Анкета - Самойленко</title> 
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->	
+
+	
+	<!--<link rel="ICON" href="favicon.ico" />-->
+
+	<script src="js/jquery.min.js"></script>
+
+</head>
+<body>
+    <header>
+       <div class="h-pc">
+            <div class="container">
+                <nav class="h-menu slide-down">
+                    <ul>
+                        <li><a href="#personal" title="Личная информация">Личная информация</a></li>
+                        <li><a href="#skill" title="Опыт">Опыт</a></li>
+                        <li><a href="#js" title="JavaScript">JavaScript</a></li>
+                        <li><a href="#about" title="О себе">О себе</a></li> 
+                    </ul>
+                </nav>
+            </div>           
+       </div>
+       <div class="h-mob">
+            <div class="container">
+                <button class="h-menu-mob-btn"><span></span>
+                <span></span>
+                <span></span></button>
+            </div>  
+            <nav class="h-mob-menu slide-down" style="display:none;">
+                <ul>
+                    <li><a href="#personal" title="Личная информация">Личная информация</a></li>
+                    <li><a href="#skill" title="Опыт">Опыт</a></li>
+                    <li><a href="#js" title="JavaScript">JavaScript</a></li>
+                    <li><a href="#about" title="О себе">О себе</a></li> 
+                </ul>
+            </nav>        
+       </div>
+    </header>
+    <div class="wrapper">
+        <div class="container">
+            <h1 class="main-ttl">Анкета</h1>
+            <div class="personal" id="personal">
+                <div class="personal-ico"><img src="img/personal.png" alt=""></div>
+                <div class="personal-ttl">Личная информация</div>
+                <div class="personal-input">
+                    <input type="text" placeholder="ФИО" name="name" value="Самойленко Виктор Геннадиевич">
+                </div>
+                <div class="personal-input year">
+                    <select name="year">
+                        <option value="Год рождения" disabled>Год рождения</option>
+                        <option value="2001">2001</option>
+                        <option value="2000">2000</option>
+                        <option value="1999">1999</option>
+                        <option value="1998">1998</option>
+                        <option value="1997">1997</option>
+                        <option value="1996">1996</option>
+                        <option value="1995" selected>1995</option>
+                        <option value="1994">1994</option>
+                        <option value="1993">1993</option>
+                        <option value="1992">1992</option>
+                        <option value="1991">1991</option>
+                        <option value="1990">1990</option>
+                    </select>
+                </div>
+                <div class="personal-input">
+                    <input type="text" placeholder="Место проживания" name="location" value="Украина, Днепропетровская область, город Кривой Рог">
+                </div>
+                <div class="personal-input">
+                    <input type="text" placeholder="Skype" name="skype" value="viktor319597">
+                </div>
+                <div class="personal-input">
+                    <input type="text" placeholder="E-mail" name="mail" value="pbl6ewka@gmail.com">
+                </div>
+            </div>
+            <div class="skill" id="skill">
+                <div class="skill-ico"><img src="img/skill.png" alt=""></div>
+                <div class="skill-ttl">Расскажите о своем опыте</div>
+                <div class="skill-cont">
+                    <div class="skill-bl">
+                        <input type="checkbox" id="id1">
+                        <label for="id1"><span></span>БЭМ/OOCSS</label>
+                    </div>
+                    <div class="skill-bl">
+                        <input type="checkbox" id="id2" checked>
+                        <label for="id2"><span></span>Верстаю семантично</label>
+                    </div>
+                    <div class="skill-bl">
+                        <input type="checkbox" id="id3">
+                        <label for="id3"><span></span>Webpack</label>
+                    </div>
+                    <div class="skill-bl">
+                        <input type="checkbox" id="id4" checked>
+                        <label for="id4"><span></span>Stylus/LESS/SASS</label>
+                    </div>
+                    <div class="skill-bl">
+                        <input type="checkbox" id="id5">
+                        <label for="id5"><span></span>ES2015/ES2016</label>
+                    </div>
+                    <div class="skill-bl">
+                        <input type="checkbox" id="id6" checked>
+                        <label for="id6"><span></span>jQuery</label>
+                    </div>
+                    <div class="skill-bl">
+                        <input type="checkbox" id="id7" checked>
+                        <label for="id7"><span></span>Работаю с SVG</label>
+                    </div>
+                    <div class="skill-bl">
+                        <input type="checkbox" id="id8" checked>
+                        <label for="id8"><span></span>Gulp/GRUNT</label>
+                    </div>
+                    <div class="skill-bl">
+                        <input type="checkbox" id="id9" checked>
+                        <label for="id9"><span></span>Иcпользую Git</label>
+                    </div>
+                </div>
+            </div>
+            <div class="jscript" id="js">
+                <div class="jscript-ico">JS</div>
+                <div class="jscript-ttl">Уровень владения JavaScript</div>
+                <div class="jscript-cont">
+                    <div class="jscript-range">
+                        <input type="text" class="range-input" name="range-input" value="" data-from="2" />
+                    </div>
+                </div>
+            </div>
+            <div class="about" id="about">
+                <div class="about-ico"><img src="img/about.png" alt=""></div>
+                <div class="about-ttl">Расскажите о себе</div>
+                <div class="about-txt">Напишите несколько предложений, чем привлекла наша вакансия <br>и что вы ожидаете от работы у нас.</div>
+                <div class="about-ta">
+                    <textarea placeholder="Понравилась тем, что...">Понравилась тем, что здесь есть почва для развития своих навыков на реальных проектах и с командой. Так же понравился уровень заработной платы. Ожидаю много интересных и необычных проектов, развития новых для себя навыков и оттачивания уже имеющихся, требования со стороны руководства, чтобы совершенствовать внимательность и аккуратность разработки.</textarea>
+                </div>
+                <button type="submit" class="about-btn">Готово</button>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
